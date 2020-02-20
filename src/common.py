@@ -233,7 +233,7 @@ def new_filtered_entries(tx, params, get_amounts, selected_postings, config):
                 flag=tx.flag,
                 payee=tx.payee,
                 narration=tx.narration + config['suffix']%(i+1, len(dates)),
-                tags={config['tag']},
+                tags=frozenset({config['tag']}),
                 links=tx.links,
                 postings=postings)
             new_transactions.append(e)

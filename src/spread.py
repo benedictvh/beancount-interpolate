@@ -5,11 +5,11 @@ from beancount.core.data import filter_txns
 from beancount.core.data import Posting
 from beancount.core.number import D
 
-from .common import extract_mark_tx
-from .common import extract_mark_posting
-from .common import new_filtered_entries
-from .common import distribute_over_period
-from .common import read_config
+from common import extract_mark_tx
+from common import extract_mark_posting
+from common import new_filtered_entries
+from common import distribute_over_period
+from common import read_config
 
 __plugins__ = ['spread']
 
